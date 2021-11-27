@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">APPointment</string>
+    <string name="inbox">הודעות</string>
+    <string name="others">אחר</string>
+    <string name="about_us">אודות</string>
+    <string name="verified">verified</string>
+    <string name="home">ראשי</string>
+    <string name="logout">יציאה</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

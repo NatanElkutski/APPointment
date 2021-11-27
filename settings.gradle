@@ -1,0 +1,2 @@
+rootProject.name='APPointment'
+include ':app'

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_background"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layoutDirection="rtl"
+    tools:context=".Management.ManagerVacationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="קביעת חופש:"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24dp" />
+
+        <View
+            android:id="@+id/vacation_top_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/vacation_title"
+            android:layout_marginTop="16dp"
+            android:background="#33000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/spinner_background_with_stroke">
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                app:ms_arrow_tint="@color/AppMainColor"
+                android:layout_height="wrap_content"
+                android:id="@+id/Manager_vacation_material_spinner" />
+        </RelativeLayout>
+
+        <com.squareup.timessquare.CalendarPickerView
+            android:id="@+id/Manager_calendar_view_grid"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:tsquare_titleTextColor="@color/black"
+            app:tsquare_headerTextColor="@color/black"
+            android:paddingBottom="16dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/Manager_vacation_btn_linear_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/Manager_vacation_btn_accept_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:theme="@style/btnTheme"
+                android:text="אישור"
+                android:background="@drawable/btn_blue_rounded_selector"
+                />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/Manager_cancelVacations_btn_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="בטל חופש"
+                android:textSize="12sp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/btn_blue_rounded_selector"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

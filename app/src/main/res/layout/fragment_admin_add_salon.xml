@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_background"
+    android:layoutDirection="rtl"
+    android:padding="16dp"
+    android:focusableInTouchMode="true"
+    tools:context=".Management.AdminAddSalonFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/admin_add_salon_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="הוסף סלון"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:layout_below="@+id/admin_add_salon_title"
+            android:id="@+id/admin_add_salon_view"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33000000"/>
+
+        <LinearLayout
+            android:layout_below="@+id/admin_add_salon_view"
+            android:id="@+id/admin_add_salon_mainLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="אנא בחר עיר:"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/spinner_background_with_stroke">
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    app:ms_arrow_tint="@color/AppMainColor"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_add_salon_spinner" />
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:shadowColor="@color/black"
+                android:text="שם סלון:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/admin_add_salon_salonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="6dp"
+                android:inputType="text"
+                android:padding="10dp"
+                android:focusableInTouchMode="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/black_edit_text_cursor"
+                android:background="@drawable/gray_et_bg_selector"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:text="כתובת דוא''ל של מנהל הסלון:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:popupBackground="@drawable/autocomplete_dropdown"
+                    android:layout_height="45dp"
+                    android:id="@+id/searchable_spinner"
+                    android:spinnerMode="dropdown"
+                    android:background="@drawable/gray_et_bg"
+                    android:focusableInTouchMode="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:shadowColor="@color/black"
+                android:text="כתובת סלון:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/admin_add_salon_salonAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/black_edit_text_cursor"
+                android:background="@drawable/gray_et_bg_selector"
+                android:drawablePadding="6dp"
+                android:inputType="text"
+                android:padding="10dp"
+                android:focusableInTouchMode="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:shadowColor="@color/black"
+                android:text="שעות פעילות:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_et_bg_selector"
+                android:gravity="center"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:weightSum="2.2">
+
+
+                <TextView
+                    android:id="@+id/admin_add_salon_salonWorkingHours2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="שעת סגירה"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:gravity="center">
+                    <requestFocus />
+                </TextView>
+
+                <TextView
+                    android:layout_marginRight="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="2"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_weight="0.2"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/admin_add_salon_salonWorkingHours1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="שעת פתיחה"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:gravity="center">
+                    <requestFocus />
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:shadowColor="@color/black"
+                android:text="טלפון:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/admin_add_salon_salonPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/black_edit_text_cursor"
+                android:background="@drawable/gray_et_bg_selector"
+                android:drawablePadding="6dp"
+                android:inputType="number"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:text="כתובת אתר: (לא חובה)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/admin_add_salon_salonWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="6dp"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="@color/login_from_details"                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/black_edit_text_cursor"
+                android:background="@drawable/gray_et_bg_selector"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/admin_add_salon_mainLL"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/btn_blue_rounded_selector"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/admin_add_salon_add_salon_btn"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="הוסף" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

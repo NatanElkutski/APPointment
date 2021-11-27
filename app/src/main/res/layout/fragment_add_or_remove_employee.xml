@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:layoutDirection="rtl"
+    android:padding="16dp"
+    tools:context=".Management.AddOrRemoveEmployeeFragment">
+
+    <TextView
+        android:id="@+id/add_or_remove_employee_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="הוספת/הסרת ספר"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/add_or_remove_employee_title"
+        android:layout_marginTop="16dp"
+        android:background="#33000000" />
+
+    <TextView
+        android:layout_above="@+id/remove_or_add_employee_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="אנא בחר פעולה:"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/remove_or_add_employee_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/btn_blue_rounded_selector"
+            android:id="@+id/AddOrRemove_add_employee_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="הוסף" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/btn_blue_rounded_selector"
+            android:id="@+id/AddOrRemove_remove_employee_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:text="הסר" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+<!-- Font Shadow -->
+<!--
+            android:shadowColor="#8222"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+-->

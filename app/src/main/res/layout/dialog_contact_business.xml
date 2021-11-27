@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:background="@drawable/bg_dialog_reg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/contact_business_exit_btn_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="צור קשר:"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/contact_business_exit_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/exit_border"
+            android:layout_marginTop="16dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_clear_20"
+            app:tint="@color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/contact_business_exit_btn_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        android:paddingBottom="24dp"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/contact_business_SalonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="שם המספרה"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/contact_business_SalonAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="כתובת"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/contact_business_SalonPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="טלפון"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/contact_business_call_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_weight="1"
+            android:drawableTint="@color/colorGreen"
+            android:drawablePadding="8dp"
+            android:paddingRight="16dp"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/ic_baseline_local_phone_24"
+            android:background="@drawable/btn_bg"
+            android:textColor="@android:color/black"
+            android:text="התקשר"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/contact_business_navigate_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:drawablePadding="8dp"
+            android:paddingRight="16dp"
+            android:drawableRight="@drawable/ic_map"
+            android:background="@drawable/btn_bg"
+            android:textColor="@android:color/black"
+            android:text="נווט"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

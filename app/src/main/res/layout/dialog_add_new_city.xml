@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layoutDirection="ltr"
+    android:background="@drawable/bg_dialog_reg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:id="@+id/dialog_add_new_city_cityTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הכנס את שם העיר:"
+            android:textSize="20sp"
+            android:layout_gravity="right"
+            android:textColor="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/dialog_add_new_city_cityNameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/et_bg"
+            android:textSize="16sp"
+            android:hint="דוגמא: אשדוד"
+            android:gravity="right"
+            android:inputType="text"
+            android:textColorHint="@color/login_from_details"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/btn_bg"
+                android:id="@+id/dialog_add_new_city_btn_cancel_id"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/ic_baseline_clear_20"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textColor="@android:color/black"
+                android:paddingRight="16dp"
+                android:drawablePadding="8dp"
+                android:textSize="14dp"
+                android:text="ביטול"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/btn_bg"
+                android:id="@+id/dialog_add_new_city_btn_accept_id"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/ic_baseline_check_16"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="14dp"
+                android:paddingRight="16dp"
+                android:drawablePadding="8dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="הוסף"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGreen">#32CD32</color>
+
+    <color name="login_from_details">#ccffffff</color>
+
+    <!-- App's white & black color -->
+    <color name="transparent_white_10p">#1affffff</color>
+    <color name="transparent_black_10p">#1a000000</color>
+    <color name="transparent_black_70p">#b3000000</color>
+
+    <!-- App's main blue color -->
+    <color name="transparent_maincolor_50p">#800362E1</color>
+    <color name="transparent_maincolor_30p">#4d0362E1</color>
+    <color name="BtnMainColor">#0362E1</color>
+    <color name="AppMainColor">#0362E1</color>
+
+    <!-- App's gray color -->
+    <color name="full_gray">#e0e0e0</color>
+    <color name="transparent_gray_70p">#b3e0e0e0</color>
+    <color name="transparent_gray_30p">#4de0e0e0</color>
+    <color name="transparent_gray_50p">#80e0e0e0</color>
+
+
+    <color name="login_from_details_medium">#68ffffff</color>
+
+
+    <color name="text_light_gray_home">#80000000</color>
+    <color name="darker_gray">#68ffffff</color>
+    <color name="black">#000000</color>
+    <color name="view_homeFragment_color">#1a000000</color>
+
+    <color name="line_selected">#ffffff</color>
+
+</resources>

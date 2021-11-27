@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_reg"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/dialog_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Name"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/dialog_phone_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Phone Number"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/dialog_btn_call_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:paddingRight="16dp"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/ic_baseline_local_phone_24"
+            android:background="@drawable/btn_bg"
+            android:textColor="@android:color/black"
+            android:text="התקשר"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/dialog_btn_message_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:drawablePadding="8dp"
+            android:paddingRight="16dp"
+            android:drawableRight="@drawable/ic_baseline_message_24"
+            android:background="@drawable/btn_bg"
+            android:textColor="@android:color/black"
+            android:text="הודעה"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/btn_bg"
+                android:id="@+id/dialog_btn_cancelApp_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="50dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableRight="@drawable/cancel_red_icon"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/black"
+                android:text="בטל פגישה"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/dialog_image_id"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/logo444"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:fadingEdge="horizontal"
+        android:background="@drawable/roundedimage_shadow"
+        app:riv_border_width="2dip"
+        app:riv_border_color="@color/colorWhite"
+        app:riv_mutate_background="false"
+        app:riv_oval="true"/>
+
+</RelativeLayout>

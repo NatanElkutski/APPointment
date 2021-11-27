@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "190333648125",
+    "firebase_url": "https://appointment-30091.firebaseio.com",
+    "project_id": "appointment-30091",
+    "storage_bucket": "appointment-30091.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190333648125:android:6b1751d59aa59ff6df1294",
+        "android_client_info": {
+          "package_name": "com.example.appointment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190333648125-upsog0qr9b8agji0vu1apgspmggff2ho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appointment",
+            "certificate_hash": "88ce99ec02f1922f27bad7ceb36dbc5cca759584"
+          }
+        },
+        {
+          "client_id": "190333648125-j6n9ak9cg0ksrd2t2tggtam1rtd9bqtr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appointment",
+            "certificate_hash": "01a7f378268e9698d1859ada3ec1b3b314d9bba8"
+          }
+        },
+        {
+          "client_id": "190333648125-lvrjf8l25ohf8i30ckikl6ml2f1i99kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2xAzlrCjbgdHHwW_ah6XJMEIBjsYWfQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190333648125-lvrjf8l25ohf8i30ckikl6ml2f1i99kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

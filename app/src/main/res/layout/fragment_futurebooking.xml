@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@drawable/main_background"
+    android:id="@+id/RLM_active"
+    tools:context=".Service.FutureBookingFragment">
+
+    <TextView
+        android:id="@+id/active_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="תורים עתידיים"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <View
+        android:layout_below="@+id/active_title"
+        android:id="@+id/active_top_view"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/active_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/active_recycler_view_id">
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_active_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:weightSum="1">
+
+    <TextView
+        android:id="@+id/txt_active_empty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:shadowColor="#8222"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="לא קיימות פגישות"
+        android:textSize="34sp"
+        android:textColor="@color/black"/>
+    </LinearLayout>
+
+</RelativeLayout>

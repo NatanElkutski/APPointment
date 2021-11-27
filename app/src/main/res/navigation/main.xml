@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    app:startDestination="@id/menuHome">
+    <fragment
+        android:id="@+id/UserInformationFragment"
+        android:name="com.example.appointment.Service.UserInformationFragment"
+        android:label="fragment_user_information"
+        tools:layout="@layout/fragment_user_information" />
+    <fragment
+        android:id="@+id/menuHome"
+        android:tag="menuHome"
+        android:name="com.example.appointment.Service.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.appointment.Service.HistoryBookingFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/activeFragment"
+        android:name="com.example.appointment.Service.FutureBookingFragment"
+        android:label="active_fragment"
+        tools:layout="@layout/fragment_futurebooking" />
+
+    <fragment
+        android:id="@+id/TimeFragment"
+        android:name="com.example.appointment.Management.TimeFragment"
+        android:label="time_fragment"
+        tools:layout="@layout/fragment_time" />
+    <fragment
+        android:id="@+id/management"
+        android:name="com.example.appointment.Management.ManagementFragment"
+        android:label="fragment_management"
+        tools:layout="@layout/fragment_management" />
+    <fragment
+        android:id="@+id/selectHoursFragment"
+        android:name="com.example.appointment.Management.SelectHoursFragment"
+        android:label="fragment_select_hours"
+        tools:layout="@layout/fragment_select_hours" />
+    <fragment
+        android:id="@+id/vacationFragment"
+        android:name="com.example.appointment.Management.VacationFragment"
+        android:label="fragment_vacation"
+        tools:layout="@layout/fragment_vacation" />
+
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.example.appointment.Service.MessagesFragment"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.appointment.Service.ContactSalonFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/addOrRemoveEmployeeFragment"
+        android:name="com.example.appointment.Management.AddOrRemoveEmployeeFragment"
+        android:label="fragment_add_employee"
+        tools:layout="@layout/fragment_add_or_remove_employee" />
+    <fragment
+        android:id="@+id/removeEmployeesFragment"
+        android:name="com.example.appointment.Management.RemoveEmployeesFragment"
+        android:label="fragment_remove_employees"
+        tools:layout="@layout/fragment_remove_employees" />
+    <fragment
+        android:id="@+id/addEmployeesFragment"
+        android:name="com.example.appointment.Management.AddEmployeesFragment"
+        android:label="fragment_add_employees"
+        tools:layout="@layout/fragment_add_employees" />
+    <fragment
+        android:id="@+id/managerTimeFragment"
+        android:name="com.example.appointment.Management.ManagerTimeFragment"
+        android:label="ManagerTimeFragment"
+        tools:layout="@layout/fragment_manager_time"/>
+    <fragment
+        android:id="@+id/managerVacationFragment"
+        android:name="com.example.appointment.Management.ManagerVacationFragment"
+        android:label="fragment_manager_vacation"
+        tools:layout="@layout/fragment_manager_vacation" />
+    <fragment
+        android:id="@+id/managerSelectHoursFragment"
+        android:name="com.example.appointment.Management.ManagerSelectHoursFragment"
+        android:label="fragment_manager_select_hours"
+        tools:layout="@layout/fragment_manager_select_hours" />
+    <fragment
+        android:id="@+id/adminAddOrRemoveSalonFragment"
+        android:name="com.example.appointment.Management.AdminAddOrRemoveSalonFragment"
+        android:label="fragment_admin_add_or_remove_salon"
+        tools:layout="@layout/fragment_admin_add_or_remove_salon" />
+    <fragment
+        android:id="@+id/adminAddSalonFragment"
+        android:name="com.example.appointment.Management.AdminAddSalonFragment"
+        android:label="fragment_admin_add_salon"
+        tools:layout="@layout/fragment_admin_add_salon" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.appointment.Service.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/adminRemoveSalonFragment"
+        android:name="com.example.appointment.Management.AdminRemoveSalonFragment"
+        android:label="fragment_admin_remove_salon"
+        tools:layout="@layout/fragment_admin_remove_salon" />
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.appointment.Service.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" />
+    <fragment
+        android:id="@+id/adminRemoveEmployeeFragment"
+        android:name="com.example.appointment.Management.AdminRemoveEmployee"
+        android:label="fragment_admin_remove_employee"
+        tools:layout="@layout/fragment_admin_remove_employee" />
+    <fragment
+        android:id="@+id/adminAddEmployeeFragment"
+        android:name="com.example.appointment.Management.AdminAddEmployeeFragment"
+        android:label="fragment_admin_add_employee"
+        tools:layout="@layout/fragment_admin_add_employee" />
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.appointment.Management.StatisticsFragment"
+        android:label="StatisticsFragment" />
+    <fragment
+        android:id="@+id/managerStatisticsFragment"
+        android:name="com.example.appointment.Management.ManagerStatisticsFragment"
+        android:label="fragment_manager_statistics"
+        tools:layout="@layout/fragment_manager_statistics" />
+
+
+</navigation>

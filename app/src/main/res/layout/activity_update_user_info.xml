@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background_without_corner"
+    tools:context=".SignActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="מלא את הפרטים שלך:"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/login_from_details_medium"
+                android:textSize="30sp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/userInfo_fname_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/et_bg"
+                android:hint="שם פרטי:"
+                android:textDirection="rtl"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColorHint="@color/login_from_details"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/userInfo_lname_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/et_bg"
+                android:hint="שם משפחה:"
+                android:textDirection="rtl"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColorHint="@color/login_from_details"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/login_from_details_medium"
+                android:text="בחר את גילך:"
+                android:textSize="20dp"/>
+
+            <DatePicker
+                android:id="@+id/userInfo_datepicker_id"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:calendarTextColor="@color/login_from_details_medium"
+                android:spinnersShown="true"
+                android:theme="@style/MyDatePicker"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/userInfo_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn_bg"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="אישור"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/AppMainColor"
+                android:layout_gravity="center"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

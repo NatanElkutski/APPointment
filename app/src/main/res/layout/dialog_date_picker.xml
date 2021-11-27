@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    android:layout_gravity="center">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog_reg"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <com.squareup.timessquare.CalendarPickerView
+        android:id="@+id/dialog_date_picker_calendar_view_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:tsquare_titleTextColor="@color/white"
+        app:tsquare_headerTextColor="@color/white"
+        app:tsquare_displayHeader="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:backgroundTint="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/btn_bg"
+            android:id="@+id/dialog_date_picker_btn_cancel_id"
+            android:textAlignment="textStart"
+            android:drawableRight="@drawable/ic_baseline_clear_20"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="16dp"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="ביטול"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginRight="16dp"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/btn_bg"
+            android:id="@+id/dialog_date_picker_btn_accept_id"
+            android:textAlignment="textStart"
+            android:drawableRight="@drawable/ic_baseline_check_16"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="14sp"
+            android:paddingRight="16dp"
+            android:drawablePadding="16dp"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black"
+            android:text="אישור"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>

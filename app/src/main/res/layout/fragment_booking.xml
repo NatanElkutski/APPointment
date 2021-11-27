@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_without_corner"
+    tools:context=".Service.BookingFragment">
+
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:sv_animationType="None"
+        app:sv_stepPadding="12dp"
+        android:layoutDirection="rtl"
+
+        app:sv_selectedCircleColor="@color/transparent_white_10p"
+        app:sv_selectedStepNumberColor="@color/colorWhite"
+        app:sv_selectedTextColor="@color/colorWhite"
+        app:sv_selectedCircleRadius="16dp"
+
+        app:sv_doneCircleColor="@color/colorGreen"
+        app:sv_doneStepLineColor="@color/colorGreen"
+        app:sv_doneTextColor="@color/colorGreen"
+        app:sv_doneStepMarkColor="@color/colorWhite"
+
+        app:sv_nextStepCircleColor="@color/transparent_gray_70p"
+        app:sv_nextStepLineColor="@color/transparent_gray_70p"
+        app:sv_nextTextColor="@color/transparent_gray_70p"
+        />
+
+    <com.example.appointment.Common.NonSwipeViePager
+        android:id="@+id/view_pager"
+        android:layout_below="@id/step_view"
+        android:layout_above="@id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ObsoleteLayoutParam"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layoutDirection="rtl"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_previous_step"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@drawable/disabled_booking_prevbtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:enabled="false"
+            android:clickable="true"
+            android:text="קודם"/>
+
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/AppMainColor"
+            android:background="@drawable/disabled_booking_nextbtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:enabled="false"
+            android:text="הבא"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+    <!--<Button-->
+    <!--android:id="@+id/sign_in_with_phone_btn"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="24dp"-->
+    <!--android:drawableLeft="@drawable/ic_connect_via_phone_icon"-->
+    <!--android:drawablePadding="-24dp"-->
+    <!--android:paddingStart="16dp"-->
+    <!--android:text="התחבר באמצעות הטלפון"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textStyle="bold" />-->

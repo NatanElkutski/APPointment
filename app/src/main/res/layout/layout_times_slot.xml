@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_time_slot"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="7dp"
+    android:tag="Available"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:background="@drawable/available_cardview_bookingfragment"
+        android:id="@+id/booking_timeslot_card_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="9:00 - 9:30"
+            android:textSize="12sp"
+            android:id="@+id/txt_time_slot"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="פנוי"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_time_slot_description"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

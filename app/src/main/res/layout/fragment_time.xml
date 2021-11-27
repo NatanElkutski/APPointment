@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <devs.mulham.horizontalcalendar.HorizontalCalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarViewBarber"
+        android:layoutDirection="rtl"
+        android:background="@color/colorWhite"
+        app:colorBottomText="@color/transparent_black_70p"
+        app:colorMiddleText="@color/transparent_black_70p"
+        app:colorTopText="@color/transparent_black_70p"
+        app:colorTopTextSelected="@color/black"
+        app:colorMiddleTextSelected="@color/black"
+        app:colorBottomTextSelected="@color/black"
+        app:selectorColor="@color/AppMainColor"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_time_slot_barber"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/calendarViewBarber"
+        android:visibility="visible"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/timeFragment_NA_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:text="תאריך זה אינו זמין."
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:visibility="gone"/>
+</RelativeLayout>

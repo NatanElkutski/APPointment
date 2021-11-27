@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:itemTextAppearance="@style/RobotoTextViewStyle"
+    android:id="@+id/Menu_id"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigationView">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        android:checkable="true"/>
+
+    <item android:id="@+id/messagesFragment"
+        android:icon="@drawable/ic_email"
+        app:actionViewClass="android.widget.TextView"
+        android:title="@string/inbox"
+        android:checkable="true"/>
+
+    <item
+        android:id="@+id/activeFragment"
+        android:icon="@drawable/ic_calendar_future_nav"
+        android:title="תורים עתידיים"
+        android:checkable="true"/>
+
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/ic_history_icon_white"
+        android:title="היסטוריה"
+        android:checkable="true"/>
+
+    <item
+        android:id="@+id/UserInformationFragment"
+        android:icon="@drawable/ic_users_nav"
+        android:title="פרטים אישיים"
+        android:checkable="true"
+        />
+
+
+
+    <item android:title="ניהול"
+        android:id="@+id/managementMenu"
+        android:visible="false">
+        <menu>
+
+            <item android:id="@+id/management"
+                android:title="ניהול עבודה"
+                android:icon="@drawable/ic_management_nav"
+                android:checkable="true"/>
+
+            <item android:id="@+id/TimeFragment"
+                android:icon="@drawable/ic_hours_nav"
+                android:title="צפייה ביומן תורים"
+                android:visible="false"
+                android:checkable="true"/>
+
+        </menu>
+
+    </item>
+
+
+
+    <item android:title="@string/others">
+
+        <menu>
+
+            <item
+                android:id="@+id/aboutUsFragment"
+                android:icon="@drawable/ic_info"
+                android:title="@string/about_us"
+                android:checkable="true"/>
+
+            <item
+                android:id="@+id/menuLogout"
+                android:icon="@drawable/ic_logout_nav"
+                android:title="@string/logout"/>
+
+        </menu>
+
+    </item>
+
+</menu>

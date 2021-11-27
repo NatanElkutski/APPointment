@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_background"
+    android:layoutDirection="rtl"
+    android:padding="16dp"
+    tools:context=".Management.ManagerSelectHoursFragment">
+
+    <TextView
+        android:id="@+id/manager_select_hours_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="קביעת שעות עבודה"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/manager_select_hours_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/manager_select_hours_title"
+        android:layout_marginTop="16dp"
+        android:background="#33000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/manager_select_hours_top_view"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/spinner_background_with_stroke">
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                app:ms_arrow_tint="@color/AppMainColor"
+                android:layout_height="wrap_content"
+                android:id="@+id/Manager_selectHours_materialSpinner" />
+        </RelativeLayout>
+
+        <!-- DAYS MAIN LINEAR LAYOUT -->
+        <LinearLayout
+            android:id="@+id/Manager_selectHours_days_main_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <!-- Sunday -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ראשון"
+                    android:textColor="@color/AppMainColor"
+
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/Manager_selectHours_day11"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="שעת פתיחה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day12"
+                    android:text="שעת סגירה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/Manager_selectHours_check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/AppMainColor"
+                    android:gravity="center|right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#33000000" />
+            <!-- Monday -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="שני"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day21"
+                    android:text="שעת פתיחה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day22"
+                    android:text="שעת סגירה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/Manager_selectHours_check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/AppMainColor"
+                    android:gravity="center|right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#33000000" />
+            <!-- Tuesday -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="שלישי"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day31"
+                    android:text="שעת פתיחה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day32"
+                    android:text="שעת סגירה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/Manager_selectHours_check3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/AppMainColor"
+                    android:gravity="center|right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#33000000" />
+            <!-- Wednesday -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="רביעי"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day41"
+                    android:text="שעת פתיחה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day42"
+                    android:text="שעת סגירה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/Manager_selectHours_check4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/AppMainColor"
+                    android:gravity="center|right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#33000000" />
+
+            <!-- Thursday -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="חמישי"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day51"
+                    android:text="שעת פתיחה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day52"
+                    android:text="שעת סגירה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+
+                <CheckBox
+                    android:id="@+id/Manager_selectHours_check5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/AppMainColor"
+                    android:gravity="center|right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#33000000" />
+
+            <!-- Friday -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="שישי"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day61"
+                    android:text="שעת פתיחה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day62"
+                    android:text="שעת סגירה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/Manager_selectHours_check6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/AppMainColor"
+                    android:gravity="center|right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#33000000" />
+
+            <!-- Saturday -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="שבת"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day71"
+                    android:text="שעת פתיחה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/Manager_selectHours_day72"
+                    android:text="שעת סגירה"
+                    android:textColor="@color/AppMainColor"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/Manager_selectHours_check7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/AppMainColor"
+                    android:gravity="center|right" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/btn_blue_rounded_selector"
+            android:id="@+id/Manager_selectHours_confirm_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="אישור">
+
+        </Button>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/btn_blue_rounded_selector"
+            android:id="@+id/Manager_selectHours_close_selected_days"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="סגור ימים">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

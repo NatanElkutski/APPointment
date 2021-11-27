@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layoutDirection="ltr"
+    android:background="@drawable/bg_dialog_reg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הכנס מספר טלפון:"
+            android:textSize="20dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/dialog_phoneReg_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/et_bg"
+            android:hint="דוגמא: 0541234567"
+            android:padding="12dp"
+            android:ellipsize="middle"
+            android:textSize="16sp"
+            android:defaultFocusHighlightEnabled="true"
+            android:gravity="center"
+            android:inputType="phone"
+            android:textColorHint="@color/login_from_details"/>
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinview_verify"
+            style="@style/PinWidget.PinView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:cursorVisible="true"
+            android:padding="8dp"
+            app:cursorColor="@color/line_selected"
+            app:cursorWidth="2dp"
+            app:itemCount="6"
+            android:inputType="number"
+            app:itemHeight="35dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="10dp"
+            app:itemWidth="35dp"
+            app:lineColor="@color/line_selected"
+            app:lineWidth="3dp"
+            app:viewType="rectangle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25dp">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/btn_bg"
+                android:id="@+id/dialog_btn_cancel_id"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/ic_baseline_clear_20"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:paddingRight="16dp"
+                android:drawablePadding="16dp"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:text="ביטול"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/btn_bg"
+                android:id="@+id/dialog_btn_accept_id"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/ic_baseline_check_16"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:paddingRight="16dp"
+                android:drawablePadding="16dp"
+                android:textStyle="bold"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/black"
+                android:text="שלח"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

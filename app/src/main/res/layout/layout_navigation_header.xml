@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@drawable/navigation_menu_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageProfile4"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="140dp"
+        android:layout_width="140dp"
+        android:src="@drawable/logo444"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="5dip"
+        android:background="@drawable/roundedimage_shadow"
+        app:riv_border_width="2dip"
+        app:riv_border_color="@color/colorWhite"
+        app:riv_mutate_background="false"
+        app:riv_oval="true" />
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/nameProfile4"
+        android:layout_height="wrap_content"
+        android:text="VOVA"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/verified_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/verified"
+            android:textColor="@color/colorGreen"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/verified_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_verified_user_24px"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

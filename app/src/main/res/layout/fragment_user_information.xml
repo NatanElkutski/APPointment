@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/UserInformationFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:layoutDirection="rtl"
+    tools:context=".Service.UserInformationFragment">
+
+
+    <TextView
+        android:id="@+id/user_information_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:shadowColor="#33000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="פרטים אישיים:"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_information_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <!--***************  FullName Layout ****************-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="שם מלא:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/userInformation_fullname_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="פרטי משפחה"
+                android:textColor="#b3000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/userInformation_ChangeName_btn_id"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:background="@android:color/transparent"
+                android:insetLeft="-15dp"
+                android:insetTop="0dp"
+                android:insetRight="-15dp"
+                android:insetBottom="0dp"
+                android:text="שינוי"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--***************  Email Layout ****************-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="כתובת דוא׳׳ל:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userInformation_email_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="example@gmail.com"
+                android:textColor="#b3000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <Button
+                    android:id="@+id/userInformation_verifyEmail_btn_id"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:insetLeft="-15dp"
+                    android:insetTop="-10dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:text="אמת דוא׳׳ל"
+                    android:textColor="@color/BtnMainColor"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/userInformation_ChangeEmail_btn_id"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@android:color/transparent"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:insetLeft="-15dp"
+                    android:insetTop="0dp"
+                    android:insetRight="-15dp"
+                    android:insetBottom="0dp"
+                    android:text="שינוי"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--***************  Phone Layout ****************-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33000000" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="מספר טלפון:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userInformation_phone_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="05X-XXX-XXXX"
+                android:textColor="#b3000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/userInformation_ChangePhone_btn_id"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@android:color/transparent"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:insetLeft="-15dp"
+                android:insetTop="0dp"
+                android:insetRight="-15dp"
+                android:insetBottom="0dp"
+                android:text="שינוי"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--***************  Birthdate Layout ****************-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33000000" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="תאריך לידה:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userInformation_Birthdate_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="XX/XX/XXXX"
+                android:textColor="#b3000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/userInformation_ChangeBirth_btn_id"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@android:color/transparent"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:insetLeft="-15dp"
+                android:insetTop="0dp"
+                android:insetRight="-15dp"
+                android:insetBottom="0dp"
+                android:text="שינוי"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33000000" />
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="סיסמא:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="**********"
+                android:textColor="#b3000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/userInformation_Password_btn_id"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@android:color/transparent"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:insetLeft="-15dp"
+                android:insetTop="0dp"
+                android:insetRight="-15dp"
+                android:insetBottom="0dp"
+                android:text="שינוי"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:gravity="center"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/btn_blue_rounded_selector"
+        android:textColor="@color/colorWhite"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:id="@+id/cancel_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="מחיקת משתמש"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        />
+
+
+</RelativeLayout>

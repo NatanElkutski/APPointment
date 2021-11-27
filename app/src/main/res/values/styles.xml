@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:colorPrimary">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="textColorAlertDialogListItem">@color/colorGreen</item>
+        <item name="colorControlHighlight">#2789e4</item>
+        <item name="DialogSpotColor">#000000</item>
+
+    </style>
+
+    <style name="MyDatePicker" parent="android:Widget.Material.Light.DatePicker">
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView" />
+
+    <style name="btnTheme" parent="Widget.AppCompat.Button">
+        <!-- Customize your theme here. -->
+        <!-- <item name="android:background">@android:drawable/btn_default_holo_dark</item> -->
+    </style>
+
+    <style name="NavigationItemNoRipple">
+        <item name="android:colorControlHighlight">@android:color/transparent</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:spotShadowAlpha">0</item>
+        <item name="background_radius">20dp</item>
+        <item name="riv_corner_radius">20dp</item>
+    </style>
+
+</resources>
