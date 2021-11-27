@@ -1,8 +1,7 @@
 # APPointment
  
 
-![alt text](https://github.com/NathanelElkutski/APPointment/blob/master/pictures/APPointmentBanner.jpg
-)
+![alt text](https://github.com/NathanelElkutski/APPointment/blob/main/pictures/APPointmentBanner.jpg)
 
 
 Showcase and offer your services with a professional online scheduling platform.
