@@ -1,7 +1,7 @@
 # APPointment
  
 
-![alt text](https://github.com/APPointmentIL/APPointment/blob/master/pictures/APPointmentBanner.jpg
+![alt text](https://github.com/NathanelElkutski/APPointment/blob/master/pictures/APPointmentBanner.jpg
 )
 
 
