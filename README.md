@@ -56,6 +56,6 @@ Send automated confirmations, updates and reminders about upcoming sessions.
 
 
 
- <img src="https://github.com/NathanelElkutski/APPointment/blob/main/pictures/small-linkedin-icon-28.jpg" width="18" height="18" /> [Nathanel Elkutski](https://www.linkedin.com/in/nathanelelkutski2021/)
+ <img src="https://github.com/NathanelElkutski/APPointment/blob/main/pictures/small-linkedin-icon-28.jpg" width="18" height="18" /> [Nathanel Elkutski](https://www.linkedin.com/in/nathanelkutski2021/)
 
  <img src="https://github.com/NathanelElkutski/APPointment/blob/main/pictures/small-linkedin-icon-28.jpg" width="18" height="18" /> [Ben Hamami](https://www.linkedin.com/in/ben-hamami-90512719a/)
